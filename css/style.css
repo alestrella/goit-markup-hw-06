@@ -351,7 +351,7 @@ img {
 .hero-btn,
 .form-btn {
   padding: 10px 0;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   color: var(--accent-text-and-bg-color);
 }
@@ -560,7 +560,7 @@ img {
 .filter-btn.current {
   background-color: var(--accent-color);
   color: var(--accent-text-and-bg-color);
-  box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* ---------- EXAMPLES ---------- */
@@ -729,7 +729,7 @@ img {
   font-size: 20px;
 }
 
-.form-field {
+.modal-form .form-field {
   display: block;
   position: relative;
   margin-bottom: 10px;
@@ -849,7 +849,7 @@ img {
   line-height: 1.71;
 }
 
-.form-link {
+.agreement-link {
   color: var(--accent-color);
 }
 
@@ -931,5 +931,45 @@ img {
 
 .footer-form {
   display: flex;
-  align-items: flex-end;
+  align-items: end;
+}
+
+.footer-form .footer-title {
+  display: block;
+}
+
+.footer-form-input {
+  margin-right: 12px;
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--accent-text-and-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: border var(--duration) var(--timing-function);
+}
+
+.footer-form-input:focus,
+.footer-form-input:focus-within {
+  border: 1px solid var(--accent-color);
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+.footer-form .form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.btn-text {
+  margin-right: 10px;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
 }

@@ -1,7 +1,7 @@
 (() => {
   const refs = {
-    formsend: document.querySelector('.js-speaker-form'),
-    modalsend:document.querySelector('.modal-form')};
+    formsend: document.querySelector('.footer-form'),
+    modalsend: document.querySelector('.modal-form')};
 
   refs.formsend.addEventListener('submit', e => {
     e.preventDefault();

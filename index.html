@@ -61,6 +61,50 @@
                   <use href="./images/icons.svg#close"></use>
                 </svg>
               </button>
+
+              <form name="modal-form">
+                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+                <label class="form-field">
+                  <span class="label-text">Имя</span>
+                  <input class="form-input" type="text" name="name">
+                  <svg class="form-icon">
+                    <use href="./images/icons.svg#person"></use>
+                  </svg>
+                </label>
+
+                <label class="form-field">
+                  <span class="label-text">Телефон</span>
+                  <input class="form-input" type="tel" name="phone">
+                  <svg class="form-icon">
+                    <use href="./images/icons.svg#phone"></use>
+                  </svg>
+                </label>
+
+                <label class="form-field">
+                  <span class="label-text">Почта</span>
+                  <input class="form-input" type="email" name="email">
+                  <svg class="form-icon">
+                    <use href="./images/icons.svg#email-form"></use>
+                  </svg>
+                </label>
+
+                <label class="form-field">
+                  <span class="label-text">Комментарий</span>
+                  <textarea class="form-textarea" type="textarea" name="comment" placeholder="Введите текст"></textarea>
+                </label>
+
+                <label class="form-checkbox">
+                  <input class="checkbox" type="checkbox" name="agreement">
+                  <svg class="check-icon">
+                    <use href="./images/icons.svg#check-icon"></use>
+                  </svg>
+                  <span class="text">Соглашаюсь с рассылкой и принимаю <a class="form-link" href="">Условия договора</a></span>
+                </label>
+
+                <button class="button form-btn" type="submit">Отправить</button>
+
+              </form>
             </div>
           </div>
 
@@ -373,8 +417,9 @@
           </address>
         </div>
 
+        <!-- Socials -->
         <div class="footer-social">
-          <p class="text">присоединяйтесь</p>
+          <p class="footer-title">присоединяйтесь</p>
           <ul class="footer-icons list">
               <li class="social-list">
                 <a class="social-item" href="">
@@ -406,9 +451,24 @@
               </li>
           </ul>
         </div>
+
+        <!-- Subscribe -->
+        <form class="footer-form js-speaker-form">
+          <label  class="form-field">
+            <span class="footer-title">Подпишитесь на рассылку</span>
+            <input class="footer-input" type="email" name="email" placeholder="Email">
+          </label>
+          <button type="submit" class="button form-btn">Подписаться
+            <svg>
+              <use href="./images/icons.svg#send"></use>
+            </svg>
+          </button>
+        </form>
+
       </div>
-    </footer>
+    </footer>    
 
     <script src="./js/modal.js"></script>
+    <script src="./js/js-speaker-form.js"></script>
   </body>
 </html>
